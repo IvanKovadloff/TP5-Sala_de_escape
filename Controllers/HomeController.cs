@@ -25,11 +25,42 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Salas()
+    public IActionResult Comenzar()
     {
         
+        return View("Habitacion" + Escape.GetEstadoJuego().ToString());
+    }
+    public IActionResult Habitacion(int sala, string clave)
+    {
+        
+        if (sala==Escape.GetEstadoJuego())
+        {
+            if (Escape.ResolverSala(sala, clave))
+            {
+                if(5==Escape.GetEstadoJuego())
+                {
+                    return View("Victoria");
+                }
+                return View("Habitacion" + Escape.GetEstadoJuego().ToString());
+                
+            }else
+            {
+
+                ViewBag.Error("Error");
+                return View("Habitacion" + Escape.GetEstadoJuego().ToString());
+            }
+        }else
+        {
+            return View("Habitacion" + Escape.GetEstadoJuego().ToString());
+            //REVISAR!!!!!
+        }
+        
+    }
+    public IActionResult Victoria()
+    {
         return View();
     }
+
 
 
     public IActionResult Privacy()
