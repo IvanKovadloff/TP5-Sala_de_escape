@@ -17,6 +17,157 @@ html {
   min-height: 100%;
 }
 
+
+/* Estilos generales del cuerpo */
 body {
-  margin-bottom: 60px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(245, 215, 181);
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centra todo el contenido */
 }
+
+/* Estilos para el encabezado */
+header {
+  padding: 20px 0;
+}
+header img{
+  width: 20%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+/* Estilos para las secciones */
+section {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center; /* Alinea el contenido de las secciones al centro */
+}
+
+/* Estilos para el título principal */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes */
+section div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+section div img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Estilos para el texto del menú */
+p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los botones */
+section div a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: bisque;
+  background-color: rgb(170, 109, 28);
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+section div a:hover {
+  background-color: #964b00;
+}
+
+/* Estilos para la vista "Habitacion" */
+
+/* Estilos para el título principal */
+h1.habitacion-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el párrafo */
+p.habitacion-text {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes */
+img.habitacion-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el mensaje de error */
+p.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Estilos para el formulario */
+form {
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 200px;
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  border-color: #258cfb;
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/*Tutorial*/
+div img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+/* Estilos para el botón de pista */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rgb(170, 109, 28);
+  color: bisque;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #964b00;
+}
+
+
+
+
+
+
+
+

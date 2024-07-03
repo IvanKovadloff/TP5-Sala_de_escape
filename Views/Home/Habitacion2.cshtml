@@ -1,0 +1,20 @@
+<h1>Las puertas</h1>
+
+<p>
+    Buen trabajo, pasaste a tu segunda prueba. Ahora tienes otro tipo de incógnita a resolver. Te encuentras frente a 3 puertas, cada una alberga peligros inimaginables. 
+    La primer puerta contiene un león que no se alimenta hace 2 semanas, la segunda tiene en su interior un montón de serpientes ultra venenosas, 
+    la tercera contiene un trabajo extra de programación (muerte asegurada). Elige tu desición con mucha sabiduría, tu vida está en riesgo!
+</p>
+
+<img src="/images/puertas.jpg">
+
+@if(ViewBag.Error != null){
+    <p>@ViewBag.Error</p>
+}
+
+<form action ='@Url.Action("Habitacion", "Home", new {sala="2"})' method="post">
+    <input type="text" name="clave">
+</form>
+
+<button onclick="alert('Pista 1: Presta atención... ')"> Pista 1 </button>
+<button onclick="alert('Pista 2: Cuidado con las serpientes!')"> Pista 2 </button>

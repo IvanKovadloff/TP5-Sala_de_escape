@@ -1,0 +1,31 @@
+<h1>Oro y riquezas tentadoras</h1>
+
+<p> 
+    Como fue dicho previamente, tu sabiduría es evaluada de distintas formas. Luego de vencer al ser mitológico, parece que estás en el paraíso. 
+    Una habitación llena de oro, plata y disntintas reliquias valiosas está frente a ti. ¿Qué decides hacer al respecto?
+</p>
+
+<p>
+    Opción A: Tomas todo lo que puedas y sales corriendo
+</p>
+
+<p>
+    Opción B: Con la sabiduría de Stanca ya estás satisfecho.
+</p>
+
+<p>
+    Opción C: Te apropias de el collar de la esposa del emperador.
+</p>
+
+<img src="/images/riquezas.jpg">
+
+@if(ViewBag.Error != null){
+    <p>@ViewBag.Error</p>
+}
+
+<form action ='@Url.Action("Habitacion", "Home", new {sala="4"})' method="post">
+    <input type="text" name="clave">
+</form>
+
+<button onclick="alert('Pista 1: Piensa en lo que las catacumbas quieren escuchar ')"> Pista 1 </button>
+<button onclick="alert('Pista 2: No hagas enojar al emperador')"> Pista 2 </button>

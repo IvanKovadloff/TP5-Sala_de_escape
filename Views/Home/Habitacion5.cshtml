@@ -1,0 +1,17 @@
+<h1>Habitacion 5</h1>
+<p>Un duende te reta a resolver el ultimo acertijo tienes una lampara y 3 interruptores no podes ver la lampara hasta que dejas de ver los interruptores
+ y solo puedes chequear 1 vez, que haces? 1-Prender la lampara 1 y luego me fijo. 2 prendo 2 interruptores a la vez. 3 dejo uno prendido, luego lo apago y acciono otro.
+
+</p>
+<img src="/images/duende.jpg">
+
+@if(ViewBag.Error != null){
+    <p>@ViewBag.Error</p>
+}
+
+<form action ='@Url.Action("Habitacion", "Home", new {sala="5"})' method="post">
+    <input type="text" name="clave">
+</form>
+
+<button onclick="alert('Pista 1: Piensa en lo que las catacumbas quieren escuchar ')"> Pista 1 </button>
+<button onclick="alert('Pista 2: No hagas enojar al emperador')"> Pista 2 </button>

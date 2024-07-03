@@ -1,0 +1,29 @@
+<h1>Seres mitológicos</h1>
+
+<p>
+    Has pasado la prueba, pero cada vez aumenta la dificultad! Tu actual desafío es derrotar a un oso mitológico, supuestamente es 
+    el más fuerte y poderoso de su raza. Pero tranquilo, hay una manera de vencerlo, si demuestras valentía puedes encontrar su debilidad. 
+    ¿Cómo lo enfrentarás?
+</p>
+<p>
+    Opción 1: Aplicas maniobras de lucha libre
+</p>
+<p>
+    Opción 2: Le pegas en el osico
+</p>
+<p>
+    Opción 3: Intentas escapar
+</p>
+
+<img src="/images/oso.jpg">
+
+@if(ViewBag.Error != null){
+    <p>@ViewBag.Error</p>
+}
+
+<form action ='@Url.Action("Habitacion", "Home", new {sala="3"})' method="post">
+    <input type="text" name="clave">
+</form>
+
+<button onclick="alert('Pista 1: Tienes que demostrar valentía! ')"> Pista 1 </button>
+<button onclick="alert('Pista 2: No eres bueno en la lucha libre...')"> Pista 2 </button>

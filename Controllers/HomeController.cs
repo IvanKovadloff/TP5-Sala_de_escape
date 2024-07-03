@@ -27,17 +27,16 @@ public class HomeController : Controller
 
     public IActionResult Comenzar()
     {
-        
         return View("Habitacion" + Escape.GetEstadoJuego().ToString());
     }
     public IActionResult Habitacion(int sala, string clave)
     {
-        
+        Console.WriteLine("Entre al habitacion controller");
         if (sala==Escape.GetEstadoJuego())
         {
             if (Escape.ResolverSala(sala, clave))
             {
-                if(5==Escape.GetEstadoJuego())
+                if(6==Escape.GetEstadoJuego())
                 {
                     return View("Victoria");
                 }
@@ -45,18 +44,20 @@ public class HomeController : Controller
                 
             }else
             {
-
-                ViewBag.Error("Error");
+                ViewBag.Error = "Error";
                 return View("Habitacion" + Escape.GetEstadoJuego().ToString());
             }
         }else
         {
             return View("Habitacion" + Escape.GetEstadoJuego().ToString());
-            //REVISAR!!!!!
         }
         
     }
     public IActionResult Victoria()
+    {
+        return View();
+    }
+    public IActionResult Creditos()
     {
         return View();
     }
