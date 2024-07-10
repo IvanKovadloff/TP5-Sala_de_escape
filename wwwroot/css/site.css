@@ -49,16 +49,19 @@ section {
 h1 {
   font-size: 2.5rem;
   color: #333;
+  text-decoration: solid;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
-/* Estilos para las imágenes */
 section div {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  font-size: 25px;
 }
 
+/* Estilos para las imágenes */
 section div img {
   max-width: 30%;
   height: auto;
@@ -140,11 +143,25 @@ form input[type="text"]:focus {
 
 /*Tutorial*/
 div img {
-  max-width: 30%;
+  max-width: 40%;
   height: auto;
   border-radius: 5px;
   margin-bottom: 2%;
   margin-top: 2%;
+}
+
+/* Estilos para las imágenes de habitación */
+img.habitacion-img {
+  max-width: 100%; /* Ajusta el ancho máximo según necesites */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  display: block; /* Asegura que la imagen se muestre como bloque para manejar el margen */
+  border-radius: 5px;
+  margin-bottom: 20px; /* Espacio inferior entre imágenes */
+  margin-top: 20px; /* Espacio superior entre imágenes */
+}
+
+div p {
+  font-size: 20px;
 }
 
 /* Estilos para el botón de pista */
@@ -152,7 +169,7 @@ button {
   margin-top: 10px;
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: rgb(170, 109, 28);
+  background-color: rgb(216, 162, 91);
   color: bisque;
   border: none;
   border-radius: 3px;

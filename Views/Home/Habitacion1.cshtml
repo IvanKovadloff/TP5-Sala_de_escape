@@ -1,18 +1,28 @@
 <h1>El Acertijo</h1>
 <p>La esfinje se presenta en las catacumbas, detrás de ella hay una salida al próximo obstáculo. Pero no tan rápido! La única
 manera de salir es diciendo correctamente el siguiente acertijo: "Dentro de ti soy la vida más pura, afuera o sin mi soy la muerte segura." </p>
-<img src="/images/esfinge.jpg">
+
+<div>
+    <img src="/images/esfinge.jpg">
+</div>
 
 @if(ViewBag.Error != null){
     <p>@ViewBag.Error</p>
 }
 
 <form action ='@Url.Action("Habitacion", "Home", new {sala="1"})' method="post">
-    <input type="text" name="clave">
+    <input type="text" required autocomplete="off" name="clave">
 </form>
 
-<button onclick="alert('Pista 1: Es un líquido ')"> Pista 1 </button>
-<button onclick="alert('Pista 2: El ser humano está compuesto de esto en un 70% ')"> Pista 2 </button>
+<button onclick='Swal.fire("Pista 1: Es un líquido");'> Pista 1 </button>
+<button onclick='Swal.fire("Pista 2: El ser humano está compuesto de esto en un 70%");'> Pista 2 </button>
+
+<section>
+    <div>
+        <a href='@Url.Action("Index","Home")' title="#Index.cshtml">Menú</a>
+    </div>
+</section>
+
 
 
 

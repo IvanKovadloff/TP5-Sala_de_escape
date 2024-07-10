@@ -1,7 +1,16 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using TP05.Models;
-
+/* RevisionJulian 10/7
+1- El tp esta bien estructurado y muy prolijo
+2- Flow del juego: al sacar el menu, nos quedamos sin algunos botones que necesitamos. LISTO
+   2.1 En tutorial agregar boton de comenzar o volver YA ESTA
+   2.2 Durante el juego en algun lugar tener el reiniciar o ir a home o algo YA ESTA
+   2,3 importante: ver la importancia de los botones YA ESTA
+3- Extras mas dificiles! ÑAO ÑAO POR AHORA
+  2.1 Usar Alertable o similar para las pistas : https://www.jqueryscript.net/other/Nice-Clean-jQuery-Alert-Confirm-Dialog-Plugin-alertable-js.html
+   
+*/
 namespace TP05.Controllers;
 
 public class HomeController : Controller

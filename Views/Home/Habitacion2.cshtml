@@ -16,5 +16,11 @@
     <input type="text" name="clave">
 </form>
 
-<button onclick="alert('Pista 1: Presta atención... ')"> Pista 1 </button>
-<button onclick="alert('Pista 2: Cuidado con las serpientes!')"> Pista 2 </button>
+<button onclick='Swal.fire("Pista 1: Presta atención...");'> Pista 1 </button>
+<button onclick='Swal.fire("Pista 2: Cuidado con las serpientes!");'> Pista 2 </button>
+
+<section>
+    <div>
+        <a href='@Url.Action("Index","Home")' title="#Index.cshtml">Menú</a>
+    </div>
+</section>
