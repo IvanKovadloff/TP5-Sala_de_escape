@@ -1,0 +1,26 @@
+<h1>Triangulos y escombros</h1>
+
+<p>
+    Bien hecho! Llegaste demasiado lejos, ya estás en el final del juego. Ahora tu tarea es encontrar cuántos triángulos hay en 
+    la pared. Suerte, queda muy poco!
+</p>
+
+<img src="/images/triangulos.png">
+
+@if(ViewBag.Error != null){
+    <p>@ViewBag.Error</p>
+}
+
+<form action ='@Url.Action("Habitacion", "Home", new {sala="8"})' method="post">
+    <input type="text" name="clave">
+</form>
+
+<button onclick='Swal.fire("Pista 1: Presta atención!");'> Pista 1</button>
+<button onclick='Swal.fire("Pista 2: Todos los triángulos cuentan...");'> Pista 2</button>
+
+<section>
+    <div>
+        <a href='@Url.Action("Index","Home")' title="#Index.cshtml">Menú</a>
+        <a href='@Url.Action("Reiniciar","Home")' title="#Index.cshtml">Reiniciar</a>
+    </div>
+</section>

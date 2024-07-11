@@ -1,5 +1,5 @@
 public static class Escape{
-    private static string[] incognitasCorrectas={"agua","1", "2","b","3","hallazgo", "17"};
+    private static string[] incognitasCorrectas={"agua","1", "2","b","3","hallazgo", "17", "5"};
     private static int EstadoJuego = 1;
 
     public static void InicializarJuego(){

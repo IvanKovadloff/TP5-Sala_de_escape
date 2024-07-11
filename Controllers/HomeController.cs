@@ -51,7 +51,7 @@ public class HomeController : Controller
         {
             if (Escape.ResolverSala(sala, clave))
             {
-                if(8==Escape.GetEstadoJuego())
+                if(9==Escape.GetEstadoJuego())
                 {
                     return View("Victoria");
                     
