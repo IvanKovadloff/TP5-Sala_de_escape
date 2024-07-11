@@ -14,7 +14,7 @@ html {
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #fba525;
 }
 
 html {
@@ -156,8 +156,8 @@ form input[type="text"] {
 form input[type="text"]:focus {
   font-family: Font1;
   outline: none;
-  border-color: #258cfb;
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  border-color: #f1a32d;
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #f1a32d;
 }
 
 /*Tutorial*/
@@ -189,8 +189,8 @@ button {
   margin-top: 10px;
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: rgb(216, 162, 91);
-  color: bisque;
+  background-color: bisque;
+  color: rgb(240, 165, 68);
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -201,7 +201,21 @@ button:hover {
   background-color: #964b00;
 }
 
+.boton-submit{
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rgb(240, 165, 68);
+  color: bisque;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.boton-submit:hover {
+  background-color: #964b00;
+}
 
 
 

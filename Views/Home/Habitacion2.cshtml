@@ -3,7 +3,7 @@
 <p>
     Buen trabajo, pasaste a tu segunda prueba. Ahora tienes otro tipo de incógnita a resolver. Te encuentras frente a 3 puertas, cada una alberga peligros inimaginables. 
     La primer puerta contiene un león que no se alimenta hace 2 semanas, la segunda tiene en su interior un montón de serpientes ultra venenosas, 
-    la tercera contiene un trabajo extra de programación (muerte asegurada). Elige tu desición con mucha sabiduría, tu vida está en riesgo!
+    la tercera contiene un trabajo extra de programación (muerte asegurada). Elige tu decisión con mucha sabiduría, tu vida está en riesgo!
 </p>
 
 <img src="/images/puertas.jpg">
@@ -14,6 +14,7 @@
 
 <form action ='@Url.Action("Habitacion", "Home", new {sala="2"})' method="post">
     <input type="text" name="clave">
+        <input type="submit" value="Enviar" class="boton-submit">
 </form>
 
 <button onclick='Swal.fire("Pista 1: Presta atención...");'> Pista 1 </button>
