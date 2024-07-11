@@ -33,9 +33,7 @@ body {
 }
 
 /* Estilos para el encabezado */
-header {
-  padding: 20px 0;
-}
+
 header img{
   width: 15%;
   height: auto;
@@ -57,7 +55,7 @@ h1 {
   color: #333;
   text-decoration: solid;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 1.5%;
 }
 
 section p{
