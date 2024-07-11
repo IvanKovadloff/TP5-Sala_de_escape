@@ -1,0 +1,26 @@
+<h1>El Pergamino</h1>
+
+<p>
+    Enhorabuena, pasaste el nivel! Pero no tan rápido... Encontraste una hoja antigua de papel, la cual contiene letras sueltas, que si se juntan forman una palabra. 
+    Esa palabra será la clave que te hará pasar al siguiente desafío. Mucha suerte!
+</p>
+
+<img src="/images/palabradesordenada.png">
+
+@if(ViewBag.Error != null){
+    <p>@ViewBag.Error</p>
+}
+
+<form action ='@Url.Action("Habitacion", "Home", new {sala="6"})' method="post">
+    <input type="text" name="clave">
+</form>
+
+<button onclick='Swal.fire("Pista 1: Empieza por H");'> Pista 1</button>
+<button onclick='Swal.fire("Pista 2: Termina con O");'> Pista 2</button>
+
+<section>
+    <div>
+        <a href='@Url.Action("Index","Home")' title="#Index.cshtml">Menú</a>
+        <a href='@Url.Action("Reiniciar","Home")' title="#Index.cshtml">Reiniciar</a>
+    </div>
+</section>

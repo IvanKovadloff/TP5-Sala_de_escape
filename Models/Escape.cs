@@ -1,8 +1,8 @@
 public static class Escape{
-    private static string[] incognitasCorrectas={"Agua","1", "2","B","3"};
+    private static string[] incognitasCorrectas={"agua","1", "2","b","3","hallazgo", "17"};
     private static int EstadoJuego = 1;
 
-    private static void InicializarJuego(){
+    public static void InicializarJuego(){
         EstadoJuego = 1;
     }
     public static int GetEstadoJuego(){
@@ -10,7 +10,7 @@ public static class Escape{
     }
     public static bool ResolverSala(int Sala, string IncognitaElegida){
         bool noPerdi=false;
-        if (EstadoJuego==Sala && IncognitaElegida==incognitasCorrectas[EstadoJuego-1])
+        if (EstadoJuego==Sala && IncognitaElegida.ToLower()==incognitasCorrectas[EstadoJuego-1])
         {
             noPerdi=true;
             EstadoJuego++;

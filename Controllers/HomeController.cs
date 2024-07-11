@@ -7,7 +7,7 @@ using TP05.Models;
    2.1 En tutorial agregar boton de comenzar o volver YA ESTA
    2.2 Durante el juego en algun lugar tener el reiniciar o ir a home o algo YA ESTA
    2,3 importante: ver la importancia de los botones YA ESTA
-3- Extras mas dificiles! ÑAO ÑAO POR AHORA
+3- Extras mas dificiles! LISTO
   2.1 Usar Alertable o similar para las pistas : https://www.jqueryscript.net/other/Nice-Clean-jQuery-Alert-Confirm-Dialog-Plugin-alertable-js.html
    
 */
@@ -22,6 +22,12 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    public IActionResult Reiniciar()
+    {
+        Escape.InicializarJuego();
+        
+        return View("Habitacion" + Escape.GetEstadoJuego().ToString());
+    }
     public IActionResult Index()
     {
         
@@ -45,9 +51,11 @@ public class HomeController : Controller
         {
             if (Escape.ResolverSala(sala, clave))
             {
-                if(6==Escape.GetEstadoJuego())
+                if(8==Escape.GetEstadoJuego())
                 {
                     return View("Victoria");
+                    
+
                 }
                 return View("Habitacion" + Escape.GetEstadoJuego().ToString());
                 
