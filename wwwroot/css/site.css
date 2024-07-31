@@ -91,11 +91,11 @@ p {
 /* Estilos para los botones */
 section div a {
   display: inline-block;
-  margin: 0 10px;
-  padding: 10px 20px;
+  margin: 0 5px;
+  padding: 5px 10px;
   text-decoration: none;
   color: bisque;
-  background-color: rgb(170, 109, 28);
+  background-color: rgb(250, 165, 55);
   border-radius: 3px;
   transition: background-color 0.3s ease;
 }
@@ -154,7 +154,7 @@ form input[type="text"] {
 form input[type="text"]:focus {
   font-family: Font1;
   outline: none;
-  border-color: #f1a32d;
+  border-color: #a8711d;
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #f1a32d;
 }
 
@@ -201,9 +201,9 @@ button:hover {
 
 .boton-submit{
   margin-top: 10px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1rem;
-  background-color: rgb(240, 165, 68);
+  background-color: rgb(182, 125, 50);
   color: bisque;
   border: none;
   border-radius: 3px;
